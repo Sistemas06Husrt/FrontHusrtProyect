@@ -1,14 +1,25 @@
 import {
   ChevronLeftIcon
-} from "./chunk-7XJOKQQ4.js";
+} from "./chunk-4WFF4XC4.js";
 import {
   Ripple,
   RippleModule
-} from "./chunk-OJ44256F.js";
+} from "./chunk-CUW5Y6CZ.js";
 import {
   Tooltip,
   TooltipModule
-} from "./chunk-BKKSD6PK.js";
+} from "./chunk-6YWOCPJU.js";
+import {
+  ChevronRightIcon
+} from "./chunk-YSINCDDP.js";
+import "./chunk-JHTQDAC6.js";
+import {
+  PrimeTemplate,
+  SharedModule
+} from "./chunk-7KQJ5HAY.js";
+import {
+  ObjectUtils
+} from "./chunk-Y5SC4PLH.js";
 import {
   ActivatedRoute,
   NavigationEnd,
@@ -16,23 +27,12 @@ import {
   RouterLink,
   RouterLinkActive,
   RouterModule
-} from "./chunk-FSDHXUK6.js";
-import "./chunk-4V3CRA4W.js";
-import "./chunk-ABYLLNLG.js";
-import {
-  ChevronRightIcon
-} from "./chunk-AG5HODBK.js";
-import "./chunk-2XUV2CZU.js";
+} from "./chunk-VYZFFD7H.js";
+import "./chunk-IC7O4IWL.js";
+import "./chunk-JMJYYMKV.js";
 import {
   DomHandler
-} from "./chunk-JZQAVOZS.js";
-import {
-  PrimeTemplate,
-  SharedModule
-} from "./chunk-CJLW5SW2.js";
-import {
-  ObjectUtils
-} from "./chunk-DSPAU4UE.js";
+} from "./chunk-A3GGLH5L.js";
 import {
   CommonModule,
   NgClass,
@@ -41,7 +41,7 @@ import {
   NgStyle,
   NgTemplateOutlet,
   isPlatformBrowser
-} from "./chunk-4GOQO5MU.js";
+} from "./chunk-PWFL5MQ2.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -96,10 +96,10 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵviewQuery
-} from "./chunk-ZZ4MA4GL.js";
+} from "./chunk-7MQYRSY6.js";
 import {
   filter
-} from "./chunk-OBCKPMKI.js";
+} from "./chunk-VYHBJGD5.js";
 import "./chunk-CPNXOV62.js";
 
 // node_modules/primeng/fesm2022/primeng-tabmenu.mjs

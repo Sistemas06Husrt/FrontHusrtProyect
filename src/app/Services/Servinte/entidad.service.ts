@@ -7,20 +7,22 @@ import { Observable } from 'rxjs'
 })
 export class EntidadService {
 
+  baseUrl = 'http://172.30.20.18:3002';
+
   constructor(private http: HttpClient) { }
 
   getentidadPaciente(idPaciente: String): Observable<any>{
-    const url = 'http://localhost:3002/EntidadPaciente/' + idPaciente + '';
+    const url = this.baseUrl + '/EntidadPaciente/' + idPaciente + '';
     return this.http.get<any[]>(url, {observe: 'response'})
   }
 
   getEAPBEntidad(nombreEmpresa: string): Observable<any>{
-    const url = 'http://localhost:3002/Entidad/' + nombreEmpresa + '';
+    const url = this.baseUrl + '/Entidad/' + nombreEmpresa + '';
     return this.http.get<any[]>(url, {observe: 'response'})
   }
 
   getConsultasPediatria(object: any): Observable<any>{
-    const url = 'http://localhost:3002/evolucionesespecialistas';
+    const url = this.baseUrl + '/evolucionesespecialistas';
     return this.http.post<any[]>(url, object,{observe: 'response'})
   }
 }

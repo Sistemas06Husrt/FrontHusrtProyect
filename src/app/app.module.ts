@@ -4,7 +4,6 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -110,6 +109,9 @@ import { MessageService } from 'primeng/api';
 import { ReportspediatricsComponent } from './Components/Servinte/Reports/reportspediatrics/reportspediatrics.component';
 import { HomeComponent } from './Components/reportsHome/home/home.component';
 import { UsuariosServicioComponent } from './Components/News2/usuarios-servicio/usuarios-servicio.component';
+import { AerolineaComponent } from './Components/Aerolinea/aerolinea/aerolinea.component';
+import { RealidadComponent } from './Components/Aerolinea/realidad/realidad/realidad.component';
+
 
 @NgModule({
   declarations: [
@@ -118,7 +120,9 @@ import { UsuariosServicioComponent } from './Components/News2/usuarios-servicio/
     LoginComponent,
     ReportspediatricsComponent,
     HomeComponent,
-    UsuariosServicioComponent
+    UsuariosServicioComponent,
+    AerolineaComponent,
+    RealidadComponent
   ],
   imports: [
     AppRoutingModule,
@@ -221,7 +225,9 @@ import { UsuariosServicioComponent } from './Components/News2/usuarios-servicio/
     AnimateModule,
     CardModule,
     RippleModule,
-    StyleClassModule
+    StyleClassModule,
+
+
 
   ],
   providers: [

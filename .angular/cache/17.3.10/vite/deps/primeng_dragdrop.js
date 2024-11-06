@@ -1,9 +1,9 @@
 import {
   DomHandler
-} from "./chunk-JZQAVOZS.js";
+} from "./chunk-A3GGLH5L.js";
 import {
   CommonModule
-} from "./chunk-4GOQO5MU.js";
+} from "./chunk-PWFL5MQ2.js";
 import {
   Directive,
   ElementRef,
@@ -23,8 +23,8 @@ import {
   ɵɵdefineNgModule,
   ɵɵdirectiveInject,
   ɵɵlistener
-} from "./chunk-ZZ4MA4GL.js";
-import "./chunk-OBCKPMKI.js";
+} from "./chunk-7MQYRSY6.js";
+import "./chunk-VYHBJGD5.js";
 import "./chunk-CPNXOV62.js";
 
 // node_modules/primeng/fesm2022/primeng-dragdrop.mjs

@@ -7,20 +7,22 @@ import { firstValueFrom } from 'rxjs';
 })
 export class News2Service {
 
+  baseUrl = 'http://172.30.20.18:3002';
+
   http = inject(HttpClient);
 
   getServicios(){
-    const url = 'http://172.30.20.224:3002/ubicacionesconpacientes';
+    const url = this.baseUrl + '/ubicacionesconpacientes';
     return firstValueFrom(this.http.get<any[]>(url));
   }
 
   getPacientesServicio(ubicacion: any){
-    const url = 'http://172.30.20.224:3002/pascientesubicacion/' + ubicacion.ubicod;
+    const url = this.baseUrl + '/pascientesubicacion/' + ubicacion.ubicod;
     return firstValueFrom(this.http.get<any[]>(url));
   }
 
   getSignosPaciente(epipac: any){
-    const url = 'http://172.30.20.224:3002/signospaciente/' + epipac;
+    const url = this.baseUrl + '/signospaciente/' + epipac;
     return firstValueFrom(this.http.get<any>(url));
   }
 }
