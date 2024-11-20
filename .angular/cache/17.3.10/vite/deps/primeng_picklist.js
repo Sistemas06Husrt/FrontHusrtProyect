@@ -24,6 +24,9 @@ import {
   SearchIcon
 } from "./chunk-FG35RFFX.js";
 import {
+  HomeIcon
+} from "./chunk-7FRLOY7M.js";
+import {
   AngleRightIcon
 } from "./chunk-SSLQEOMP.js";
 import {
@@ -36,9 +39,6 @@ import {
   RippleModule
 } from "./chunk-CUW5Y6CZ.js";
 import "./chunk-AZMIDWQ4.js";
-import {
-  HomeIcon
-} from "./chunk-7FRLOY7M.js";
 import "./chunk-JHTQDAC6.js";
 import {
   FilterService,

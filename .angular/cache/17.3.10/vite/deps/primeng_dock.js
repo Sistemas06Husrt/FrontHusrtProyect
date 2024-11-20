@@ -1,11 +1,17 @@
 import {
+  Tooltip,
+  TooltipModule
+} from "./chunk-6YWOCPJU.js";
+import {
   Ripple,
   RippleModule
 } from "./chunk-CUW5Y6CZ.js";
 import {
-  Tooltip,
-  TooltipModule
-} from "./chunk-6YWOCPJU.js";
+  RouterLink,
+  RouterModule
+} from "./chunk-VYZFFD7H.js";
+import "./chunk-IC7O4IWL.js";
+import "./chunk-JMJYYMKV.js";
 import {
   PrimeTemplate,
   SharedModule
@@ -14,12 +20,6 @@ import {
   ObjectUtils,
   UniqueComponentId
 } from "./chunk-Y5SC4PLH.js";
-import {
-  RouterLink,
-  RouterModule
-} from "./chunk-VYZFFD7H.js";
-import "./chunk-IC7O4IWL.js";
-import "./chunk-JMJYYMKV.js";
 import {
   DomHandler
 } from "./chunk-A3GGLH5L.js";

@@ -2,6 +2,10 @@ import {
   PlusIcon
 } from "./chunk-7QJTPGCQ.js";
 import {
+  Tooltip,
+  TooltipModule
+} from "./chunk-6YWOCPJU.js";
+import {
   ButtonDirective,
   ButtonModule
 } from "./chunk-742ZMPYL.js";
@@ -12,9 +16,11 @@ import {
 } from "./chunk-CUW5Y6CZ.js";
 import "./chunk-AZMIDWQ4.js";
 import {
-  Tooltip,
-  TooltipModule
-} from "./chunk-6YWOCPJU.js";
+  RouterLink,
+  RouterModule
+} from "./chunk-VYZFFD7H.js";
+import "./chunk-IC7O4IWL.js";
+import "./chunk-JMJYYMKV.js";
 import "./chunk-JHTQDAC6.js";
 import {
   PrimeTemplate,
@@ -23,12 +29,6 @@ import {
 import {
   UniqueComponentId
 } from "./chunk-Y5SC4PLH.js";
-import {
-  RouterLink,
-  RouterModule
-} from "./chunk-VYZFFD7H.js";
-import "./chunk-IC7O4IWL.js";
-import "./chunk-JMJYYMKV.js";
 import {
   DomHandler
 } from "./chunk-A3GGLH5L.js";

@@ -22,11 +22,11 @@ import {
   RippleModule
 } from "./chunk-CUW5Y6CZ.js";
 import {
-  ChevronDownIcon
-} from "./chunk-FETNGCTX.js";
-import {
   ChevronRightIcon
 } from "./chunk-YSINCDDP.js";
+import {
+  ChevronDownIcon
+} from "./chunk-FETNGCTX.js";
 import {
   PrimeNGConfig,
   PrimeTemplate,
@@ -3263,4 +3263,4 @@ export {
   Tree,
   TreeModule
 };
-//# sourceMappingURL=chunk-376LFTVA.js.map
+//# sourceMappingURL=chunk-7PFQTN66.js.map

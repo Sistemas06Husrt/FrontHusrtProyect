@@ -7,9 +7,6 @@ import {
   FocusTrapModule
 } from "./chunk-RDVW5JHD.js";
 import {
-  TimesIcon
-} from "./chunk-SKFL5ZQM.js";
-import {
   ButtonDirective,
   ButtonModule
 } from "./chunk-742ZMPYL.js";
@@ -18,6 +15,9 @@ import {
   Ripple,
   RippleModule
 } from "./chunk-CUW5Y6CZ.js";
+import {
+  TimesIcon
+} from "./chunk-SKFL5ZQM.js";
 import "./chunk-AZMIDWQ4.js";
 import "./chunk-JHTQDAC6.js";
 import {

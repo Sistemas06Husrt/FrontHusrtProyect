@@ -8,7 +8,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReportceComponent } from './Components/Imaging/ReportCE/reportce/reportce.component';
-import { LoginComponent } from './Components/Login/login/login.component';
 
 import { AccordionModule } from 'primeng/accordion';
 import { AutoCompleteModule } from 'primeng/autocomplete';
@@ -111,18 +110,27 @@ import { HomeComponent } from './Components/reportsHome/home/home.component';
 import { UsuariosServicioComponent } from './Components/News2/usuarios-servicio/usuarios-servicio.component';
 import { AerolineaComponent } from './Components/Aerolinea/aerolinea/aerolinea.component';
 import { RealidadComponent } from './Components/Aerolinea/realidad/realidad/realidad.component';
+import { HomeadminsistemasComponent } from './Components/Homepage/homeadminsistemas/homeadminsistemas.component';
+import { HomeadminbiomedicaComponent } from './Components/Homepage/homeadminbiomedica/homeadminbiomedica.component';
+import { HomeadminmantenimientoComponent } from './Components/Homepage/homeadminmantenimiento/homeadminmantenimiento.component';
+import { RegistroComponent } from './Components/registro/registro.component';
+import { LoginComponent } from './Components/login/login.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ReportceComponent,
-    LoginComponent,
     ReportspediatricsComponent,
     HomeComponent,
     UsuariosServicioComponent,
     AerolineaComponent,
-    RealidadComponent
+    RealidadComponent,
+    HomeadminsistemasComponent,
+    HomeadminbiomedicaComponent,
+    HomeadminmantenimientoComponent,
+    RegistroComponent,
+    LoginComponent
   ],
   imports: [
     AppRoutingModule,

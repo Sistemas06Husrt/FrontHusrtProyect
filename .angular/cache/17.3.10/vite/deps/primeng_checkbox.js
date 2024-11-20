@@ -2,13 +2,13 @@ import {
   CheckIcon
 } from "./chunk-CK2LELQV.js";
 import {
-  NG_VALUE_ACCESSOR,
-  NgControl
-} from "./chunk-V4YINN7P.js";
-import {
   AutoFocus,
   AutoFocusModule
 } from "./chunk-AZMIDWQ4.js";
+import {
+  NG_VALUE_ACCESSOR,
+  NgControl
+} from "./chunk-V4YINN7P.js";
 import "./chunk-JHTQDAC6.js";
 import {
   PrimeNGConfig,

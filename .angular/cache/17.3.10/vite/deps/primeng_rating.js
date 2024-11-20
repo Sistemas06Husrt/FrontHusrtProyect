@@ -1,10 +1,10 @@
 import {
-  NG_VALUE_ACCESSOR
-} from "./chunk-V4YINN7P.js";
-import {
   AutoFocus,
   AutoFocusModule
 } from "./chunk-AZMIDWQ4.js";
+import {
+  NG_VALUE_ACCESSOR
+} from "./chunk-V4YINN7P.js";
 import {
   BaseIcon
 } from "./chunk-JHTQDAC6.js";

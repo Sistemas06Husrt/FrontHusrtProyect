@@ -2,18 +2,18 @@ import {
   InputTextModule
 } from "./chunk-NT324FHF.js";
 import {
-  TimesCircleIcon
-} from "./chunk-2W5BELHQ.js";
-import {
   TimesIcon
 } from "./chunk-SKFL5ZQM.js";
-import {
-  NG_VALUE_ACCESSOR
-} from "./chunk-V4YINN7P.js";
 import {
   AutoFocus,
   AutoFocusModule
 } from "./chunk-AZMIDWQ4.js";
+import {
+  TimesCircleIcon
+} from "./chunk-2W5BELHQ.js";
+import {
+  NG_VALUE_ACCESSOR
+} from "./chunk-V4YINN7P.js";
 import "./chunk-JHTQDAC6.js";
 import {
   PrimeNGConfig,

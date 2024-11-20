@@ -2,8 +2,6 @@ import {
   Tooltip,
   TooltipModule
 } from "./chunk-6YWOCPJU.js";
-import "./chunk-7KQJ5HAY.js";
-import "./chunk-Y5SC4PLH.js";
 import {
   ActivatedRoute,
   Router,
@@ -13,6 +11,8 @@ import {
 } from "./chunk-VYZFFD7H.js";
 import "./chunk-IC7O4IWL.js";
 import "./chunk-JMJYYMKV.js";
+import "./chunk-7KQJ5HAY.js";
+import "./chunk-Y5SC4PLH.js";
 import {
   DomHandler
 } from "./chunk-A3GGLH5L.js";

@@ -1,11 +1,20 @@
 import {
+  Tooltip,
+  TooltipModule
+} from "./chunk-6YWOCPJU.js";
+import {
   Ripple,
   RippleModule
 } from "./chunk-CUW5Y6CZ.js";
 import {
-  Tooltip,
-  TooltipModule
-} from "./chunk-6YWOCPJU.js";
+  RouterLink,
+  RouterLinkActive,
+  RouterModule
+} from "./chunk-VYZFFD7H.js";
+import {
+  DomSanitizer
+} from "./chunk-IC7O4IWL.js";
+import "./chunk-JMJYYMKV.js";
 import {
   OverlayService,
   PrimeNGConfig,
@@ -22,15 +31,6 @@ import {
   transition,
   trigger
 } from "./chunk-PYQZ4JTM.js";
-import {
-  RouterLink,
-  RouterLinkActive,
-  RouterModule
-} from "./chunk-VYZFFD7H.js";
-import {
-  DomSanitizer
-} from "./chunk-IC7O4IWL.js";
-import "./chunk-JMJYYMKV.js";
 import {
   ConnectedOverlayScrollHandler,
   DomHandler

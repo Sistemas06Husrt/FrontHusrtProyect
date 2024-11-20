@@ -1,10 +1,10 @@
 import {
-  TimesIcon
-} from "./chunk-SKFL5ZQM.js";
-import {
   Ripple,
   RippleModule
 } from "./chunk-CUW5Y6CZ.js";
+import {
+  TimesIcon
+} from "./chunk-SKFL5ZQM.js";
 import "./chunk-JHTQDAC6.js";
 import {
   OverlayService,

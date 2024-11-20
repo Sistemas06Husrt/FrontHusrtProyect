@@ -9,11 +9,11 @@ import {
   RippleModule
 } from "./chunk-CUW5Y6CZ.js";
 import {
-  ChevronDownIcon
-} from "./chunk-FETNGCTX.js";
-import {
   ChevronRightIcon
 } from "./chunk-YSINCDDP.js";
+import {
+  ChevronDownIcon
+} from "./chunk-FETNGCTX.js";
 import "./chunk-JHTQDAC6.js";
 import {
   Footer,
