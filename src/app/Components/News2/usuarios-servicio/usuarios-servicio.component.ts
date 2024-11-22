@@ -20,6 +20,7 @@ export class UsuariosServicioComponent implements OnInit {
 
 
   async verServicio(){
+    console.log('NUEVAMENTE SE EJECUTO');
     const ubicacion = {
       ubicod : this.itemselected
     }

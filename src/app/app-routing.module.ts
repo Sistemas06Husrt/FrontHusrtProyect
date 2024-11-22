@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { authGuard } from './auth.guard';
 import { RouterModule, Routes } from '@angular/router';
 import { ReportceComponent } from './Components/Imaging/ReportCE/reportce/reportce.component';
 import { ReportspediatricsComponent } from './Components/Servinte/Reports/reportspediatrics/reportspediatrics.component';
@@ -9,6 +10,8 @@ import {HomesuperadminComponent} from './Components/Homepage/homesuperadmin/home
 import {HomeadminsistemasComponent} from './Components/Homepage/homeadminsistemas/homeadminsistemas.component'
 import { HomeadminbiomedicaComponent } from './Components/Homepage/homeadminbiomedica/homeadminbiomedica.component';
 import { HomeadminmantenimientoComponent } from './Components/Homepage/homeadminmantenimiento/homeadminmantenimiento.component';
+import { RegistroComponent } from './Components/registro/registro.component';
+import { GestionUsuariosComponent } from './Components/gestion-usuarios/gestion-usuarios.component';
 const routes: Routes = [
 
   {
@@ -17,14 +20,16 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {path: 'login', component: LoginComponent},
-  {path: 'superadmin', component: HomesuperadminComponent},
-  {path: 'adminsistemas', component: HomeadminsistemasComponent},
-  {path: 'adminbiomedica', component: HomeadminbiomedicaComponent},
-  {path: 'adminmantenimineto', component: HomeadminmantenimientoComponent},
-  {path: 'imagenologia/citasCE', component: ReportceComponent},
+  {path: 'superadmin', component: HomesuperadminComponent, canActivate: [authGuard]},
+  {path: 'registro', component: RegistroComponent, canActivate: [authGuard]},
+  {path: 'adminsistemas', component: HomeadminsistemasComponent, canActivate: [authGuard]},
+  {path: 'adminbiomedica', component: HomeadminbiomedicaComponent, canActivate: [authGuard]},
+  {path: 'adminmantenimineto', component: HomeadminmantenimientoComponent, canActivate: [authGuard]},
+  {path: 'imagenologia/citasCE', component: ReportceComponent, canActivate: [authGuard]},
   {path: 'servinte/reportepediatria', component: ReportspediatricsComponent},
   {path: 'servinte/news2', component: UsuariosServicioComponent},
-  {path: 'acreditacion/aerolinea', component: AerolineaComponent}
+  {path: 'acreditacion/aerolinea', component: AerolineaComponent},
+  {path: 'admusuarios', component: GestionUsuariosComponent, canActivate: [authGuard]}
 
 ];
 

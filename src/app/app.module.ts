@@ -113,9 +113,16 @@ import { RealidadComponent } from './Components/Aerolinea/realidad/realidad/real
 import { HomeadminsistemasComponent } from './Components/Homepage/homeadminsistemas/homeadminsistemas.component';
 import { HomeadminbiomedicaComponent } from './Components/Homepage/homeadminbiomedica/homeadminbiomedica.component';
 import { HomeadminmantenimientoComponent } from './Components/Homepage/homeadminmantenimiento/homeadminmantenimiento.component';
+import { HomesuperadminComponent } from './Components/Homepage/homesuperadmin/homesuperadmin.component';
 import { RegistroComponent } from './Components/registro/registro.component';
 import { LoginComponent } from './Components/login/login.component';
-
+import { SistemasadminnavbarComponent } from './Components/navbars/sistemasadminnavbar/sistemasadminnavbar.component';
+import { BiomedicaadminnavbarComponent } from './Components/navbars/biomedicaadminnavbar/biomedicaadminnavbar.component';
+import { MantenimientoadminnavbarComponent } from './Components/navbars/mantenimientoadminnavbar/mantenimientoadminnavbar.component';
+import { SuperadminnavbarComponent } from './Components/navbars/superadminnavbar/superadminnavbar.component';
+import { GestionUsuariosComponent } from './Components/gestion-usuarios/gestion-usuarios.component';
+import { IconFieldModule } from 'primeng/iconfield';
+import { InputIconModule } from 'primeng/inputicon';
 
 @NgModule({
   declarations: [
@@ -129,8 +136,14 @@ import { LoginComponent } from './Components/login/login.component';
     HomeadminsistemasComponent,
     HomeadminbiomedicaComponent,
     HomeadminmantenimientoComponent,
+    HomesuperadminComponent,
     RegistroComponent,
-    LoginComponent
+    LoginComponent,
+    SuperadminnavbarComponent,
+    SistemasadminnavbarComponent,
+    BiomedicaadminnavbarComponent,
+    MantenimientoadminnavbarComponent,
+    GestionUsuariosComponent
   ],
   imports: [
     AppRoutingModule,
@@ -234,6 +247,8 @@ import { LoginComponent } from './Components/login/login.component';
     CardModule,
     RippleModule,
     StyleClassModule,
+    IconFieldModule,
+    InputIconModule
 
 
 

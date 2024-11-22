@@ -42,7 +42,7 @@ export class LoginComponent {
       Swal.fire({
         icon: 'warning',
         title: 'Usuario o contraseña incorecto',
-        text: 'Verifique los campos. si no cuenta con un usuario registrese.'
+        text: 'Verifique los campos.'
       })
     }
   }
