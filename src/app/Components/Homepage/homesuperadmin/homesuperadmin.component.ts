@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-homesuperadmin',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class HomesuperadminComponent {
 
+  constructor(
+    private router: Router
+  ){}
+
+  showRegisterForm(){
+    this.router.navigate(['/registro']);
+  }
+  showViewUsers(){
+    this.router.navigate(['/admusuarios']);
+  }
 }

@@ -36,7 +36,10 @@ export class LoginComponent {
             this.router.navigate(['/adminsistemas']);
           }else if(this.getDecodedAccessToken(localStorage.getItem('utoken')!).rol === 'SUPERADMIN'){
             this.router.navigate(['/superadmin']);
+          }else if(this.getDecodedAccessToken(localStorage.getItem('utoken')!).rol === 'ADMINMANTENIMIENTO'){
+            this.router.navigate(['/adminmantenimiento']);
           }
+
         }
     } catch {
       Swal.fire({

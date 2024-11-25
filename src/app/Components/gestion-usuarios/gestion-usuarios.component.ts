@@ -30,7 +30,7 @@ export class GestionUsuariosComponent {
 
   async ngOnInit() {
     try {
-      this.usuarios = await this.userService.getAllUser();
+      this.usuarios = await this.userService.getAllUsers();
       this.loading = false;
 
       console.log(this.usuarios);

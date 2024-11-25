@@ -20,7 +20,11 @@ export class UserService {
     this.baseUrl = 'http://172.30.20.18:3005';
    }
 
-   register(formValue: any) {
+   getToken(){
+    return localStorage.getItem('utoken');
+   }
+
+   registro(formValue: any) {
     return firstValueFrom(
       this.httpClient.post<any>(`${this.baseUrl}/adduser`, formValue)
     )
@@ -38,9 +42,16 @@ export class UserService {
     )
   }
 
-  getAllUser(){
+  getAllUsers(){
     return firstValueFrom(
       this.httpClient.get<any[]>(`${this.baseUrl}/users`, this.createHeaders())
+    )
+  }
+
+
+  getAllRoles(){
+    return firstValueFrom(
+      this.httpClient.get<any[]>(`${this.baseUrl}/roles`, this.createHeaders())
     )
   }
 

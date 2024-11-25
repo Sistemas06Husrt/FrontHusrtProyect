@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 export const authGuard: CanActivateFn = (route, state) => {
   const router = inject(Router);
   const userService = inject(UserService);
-  const tokenoauth = localStorage.getItem('utoken');
+  const tokenoauth = userService.getToken();
 
   if (!userService.isTokenExpired(tokenoauth!)) {
     return true; // Permite el acceso a la ruta

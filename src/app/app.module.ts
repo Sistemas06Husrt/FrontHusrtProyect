@@ -123,6 +123,10 @@ import { SuperadminnavbarComponent } from './Components/navbars/superadminnavbar
 import { GestionUsuariosComponent } from './Components/gestion-usuarios/gestion-usuarios.component';
 import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
+import { HomeusermantenimientoComponent } from './Components/Homepage/homeusermantenimiento/homeusermantenimiento.component';
+import { HomeusersistemasComponent } from './Components/Homepage/homeusersistemas/homeusersistemas.component';
+import { HomeuserbiomedicaComponent } from './Components/Homepage/homeuserbiomedica/homeuserbiomedica.component';
+import { HomeadminmesaserviciosComponent } from './Components/Homepage/homeadminmesaservicios/homeadminmesaservicios.component';
 
 @NgModule({
   declarations: [
@@ -143,7 +147,11 @@ import { InputIconModule } from 'primeng/inputicon';
     SistemasadminnavbarComponent,
     BiomedicaadminnavbarComponent,
     MantenimientoadminnavbarComponent,
-    GestionUsuariosComponent
+    GestionUsuariosComponent,
+    HomeusermantenimientoComponent,
+    HomeusersistemasComponent,
+    HomeuserbiomedicaComponent,
+    HomeadminmesaserviciosComponent
   ],
   imports: [
     AppRoutingModule,
