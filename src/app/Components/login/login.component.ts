@@ -38,6 +38,10 @@ export class LoginComponent {
             this.router.navigate(['/superadmin']);
           }else if(this.getDecodedAccessToken(localStorage.getItem('utoken')!).rol === 'ADMINMANTENIMIENTO'){
             this.router.navigate(['/adminmantenimiento']);
+          }else if(this.getDecodedAccessToken(localStorage.getItem('utoken')!).rol === 'ADMINBIOMEDICA'){
+            this.router.navigate(['/adminbiomedica']);
+          }else if(this.getDecodedAccessToken(localStorage.getItem('utoken')!).rol === 'USERBIOMEDICA'){
+            this.router.navigate(['/userbiomedica']);
           }
 
         }

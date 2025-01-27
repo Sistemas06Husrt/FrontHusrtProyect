@@ -16,6 +16,11 @@ import { HomeusermantenimientoComponent } from './Components/Homepage/homeuserma
 import { HomeusersistemasComponent } from './Components/Homepage/homeusersistemas/homeusersistemas.component';
 import { HomeuserbiomedicaComponent } from './Components/Homepage/homeuserbiomedica/homeuserbiomedica.component';
 import { HomeadminmesaserviciosComponent } from './Components/Homepage/homeadminmesaservicios/homeadminmesaservicios.component';
+import { ClasificacionInventarioComponent } from './Components/userBiomedica/clasificacion-inventario/clasificacion-inventario.component';
+import { ManteniminetoComponent } from './Components/userBiomedica/mantenimineto/mantenimineto.component';
+import { SemaforizacionComponent } from './Components/userBiomedica/semaforizacion/semaforizacion.component';
+import { IndicadoresComponent } from './Components/userBiomedica/indicadores/indicadores.component';
+import { CalendarioComponent } from './Components/userBiomedica/calendario/calendario.component';
 
 
 const routes: Routes = [
@@ -39,8 +44,14 @@ const routes: Routes = [
   {path: 'servinte/reportepediatria', component: ReportspediatricsComponent},
   {path: 'servinte/news2', component: UsuariosServicioComponent},
   {path: 'acreditacion/aerolinea', component: AerolineaComponent},
-  {path: 'admusuarios', component: GestionUsuariosComponent, canActivate: [authGuard]}
+  {path: 'admusuarios', component: GestionUsuariosComponent, canActivate: [authGuard]},
 
+  // UsuarioBiomedica
+  {path: 'biomedica/inventario', component: ClasificacionInventarioComponent, canActivate: [authGuard]},
+  {path: 'biomedica/mantenimiento', component: ManteniminetoComponent, canActivate: [authGuard]},
+  {path: 'biomedica/semaforizacion', component: SemaforizacionComponent, canActivate: [authGuard]},
+  {path: 'biomedica/indicadores', component: IndicadoresComponent, canActivate: [authGuard]},
+  {path: 'biomedica/calendario', component: CalendarioComponent, canActivate: [authGuard]}
 ];
 
 @NgModule({

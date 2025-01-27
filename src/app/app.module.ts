@@ -127,6 +127,12 @@ import { HomeusermantenimientoComponent } from './Components/Homepage/homeuserma
 import { HomeusersistemasComponent } from './Components/Homepage/homeusersistemas/homeusersistemas.component';
 import { HomeuserbiomedicaComponent } from './Components/Homepage/homeuserbiomedica/homeuserbiomedica.component';
 import { HomeadminmesaserviciosComponent } from './Components/Homepage/homeadminmesaservicios/homeadminmesaservicios.component';
+import { BiomedicausernavbarComponent } from './Components/navbars/biomedicausernavbar/biomedicausernavbar.component';
+import { ClasificacionInventarioComponent } from './Components/userBiomedica/clasificacion-inventario/clasificacion-inventario.component';
+import { ManteniminetoComponent } from './Components/userBiomedica/mantenimineto/mantenimineto.component';
+import { SemaforizacionComponent } from './Components/userBiomedica/semaforizacion/semaforizacion.component';
+import { IndicadoresComponent } from './Components/userBiomedica/indicadores/indicadores.component';
+import { CalendarioComponent } from './Components/userBiomedica/calendario/calendario.component';
 
 @NgModule({
   declarations: [
@@ -151,7 +157,13 @@ import { HomeadminmesaserviciosComponent } from './Components/Homepage/homeadmin
     HomeusermantenimientoComponent,
     HomeusersistemasComponent,
     HomeuserbiomedicaComponent,
-    HomeadminmesaserviciosComponent
+    HomeadminmesaserviciosComponent,
+    BiomedicausernavbarComponent,
+    ClasificacionInventarioComponent,
+    ManteniminetoComponent,
+    SemaforizacionComponent,
+    IndicadoresComponent,
+    CalendarioComponent
   ],
   imports: [
     AppRoutingModule,
