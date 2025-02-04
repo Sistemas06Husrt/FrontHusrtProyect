@@ -27,7 +27,7 @@ const routes: Routes = [
 
   {
     path: '',
-    redirectTo: 'servinte/news2',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {path: 'login', component: LoginComponent},
