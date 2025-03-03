@@ -75,7 +75,8 @@
       == null"><strong>---</strong>
      </p>
       <div style="text-align: center;">
-        <a href="#" *ngIf="paciente.signos.new2 == 0" class="btn btn-success">RIESGO BAJO</a>
+        <a href="#" *ngIf="paciente.signos.new2 == 0" class="btn btn-success"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">RIESGO BAJO</a>
         <a *ngIf="paciente.signos.new2 >= 1 && paciente.signos.new2 < 5" class="btn btn-info"
           style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">RIESGO BAJO
           4-6H</a>
