@@ -9,7 +9,6 @@ import { Route, Router } from '@angular/router';
 export class HomeuserbiomedicaComponent {
 
   constructor (private router: Router){
-
   }
 
   showViewInventarioBio(){

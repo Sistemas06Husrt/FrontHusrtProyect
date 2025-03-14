@@ -21,6 +21,7 @@ import { ManteniminetoComponent } from './Components/userBiomedica/mantenimineto
 import { SemaforizacionComponent } from './Components/userBiomedica/semaforizacion/semaforizacion.component';
 import { IndicadoresComponent } from './Components/userBiomedica/indicadores/indicadores.component';
 import { CalendarioComponent } from './Components/userBiomedica/calendario/calendario.component';
+import { ClasificacionTipoEquipoComponent } from './Components/userBiomedica/clasificacion-tipo-equipo/clasificacion-tipo-equipo.component';
 
 
 const routes: Routes = [
@@ -51,7 +52,8 @@ const routes: Routes = [
   {path: 'biomedica/mantenimiento', component: ManteniminetoComponent, canActivate: [authGuard]},
   {path: 'biomedica/semaforizacion', component: SemaforizacionComponent, canActivate: [authGuard]},
   {path: 'biomedica/indicadores', component: IndicadoresComponent, canActivate: [authGuard]},
-  {path: 'biomedica/calendario', component: CalendarioComponent, canActivate: [authGuard]}
+  {path: 'biomedica/calendario', component: CalendarioComponent, canActivate: [authGuard]},
+  {path: 'biomedica/tiposequipo', component: ClasificacionTipoEquipoComponent, canActivate: [authGuard]}
 ];
 
 @NgModule({

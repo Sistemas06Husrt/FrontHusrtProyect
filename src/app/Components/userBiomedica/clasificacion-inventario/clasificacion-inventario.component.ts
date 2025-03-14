@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-clasificacion-inventario',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class ClasificacionInventarioComponent {
 
+  constructor (private router: Router){
+  }
+
+  showViewTiposEquipoBio(){
+    this.router.navigate(['/biomedica/tiposequipo']);
+  }
 }

@@ -8,7 +8,7 @@
     /* Configuración para pantallas grandes: 6 columnas */
     @media (min-width: 1200px) {
       .grid-container {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
       }
     }
 
@@ -41,3 +41,4 @@
       padding: 2px;
       font-size: 15px;
     }
+

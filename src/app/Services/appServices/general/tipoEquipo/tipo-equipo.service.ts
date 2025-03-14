@@ -6,13 +6,10 @@ import { firstValueFrom } from 'rxjs';
 import { jwtDecode } from 'jwt-decode';
 import Swal from 'sweetalert2';
 
-
 @Injectable({
   providedIn: 'root'
 })
-
-
-export class UserService {
+export class TipoEquipoService {
 
   private httpClient = inject(HttpClient);
   private router = inject(Router);
@@ -20,41 +17,16 @@ export class UserService {
 
   constructor() {
     this.baseUrl = 'http://172.30.40.33:3005';
-   }
+  }
 
-   getToken(){
+  getAllTiposEquipos() {
+    return firstValueFrom(
+      this.httpClient.get<any[]>(`${this.baseUrl}/tiposequipo`, this.createHeaders())
+    )
+  }
+
+  getToken() {
     return localStorage.getItem('utoken');
-   }
-
-   registro(formValue: any) {
-    return firstValueFrom(
-      this.httpClient.post<any>(`${this.baseUrl}/adduser`, formValue)
-    )
-  }
-
-  update(formValue: any, idUser: number) {
-    return firstValueFrom(
-      this.httpClient.put<any>(`${this.baseUrl}/users/update/` + idUser, formValue)
-    )
-  }
-
-  login(formValue: any) {
-    return firstValueFrom(
-      this.httpClient.post<any>(`${this.baseUrl}/login`, formValue)
-    )
-  }
-
-  getAllUsers(){
-    return firstValueFrom(
-      this.httpClient.get<any[]>(`${this.baseUrl}/users`, this.createHeaders())
-    )
-  }
-
-
-  getAllRoles(){
-    return firstValueFrom(
-      this.httpClient.get<any[]>(`${this.baseUrl}/roles`, this.createHeaders())
-    )
   }
 
   validateToken(token: string): boolean {
@@ -82,10 +54,10 @@ export class UserService {
     return decodedToken.exp < currentTime;
   }
 
-  createHeaders(){
-    return{
-      headers: new HttpHeaders ({
-            'authorization': localStorage.getItem('utoken')!
+  createHeaders() {
+    return {
+      headers: new HttpHeaders({
+        'authorization': localStorage.getItem('utoken')!
       })
     }
   }
@@ -98,4 +70,3 @@ export class UserService {
     }
   }
 }
-
