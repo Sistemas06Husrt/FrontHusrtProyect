@@ -19,7 +19,7 @@ export class UserService {
   private baseUrl: string;
 
   constructor() {
-    this.baseUrl = 'http://172.30.40.33:3005';
+    this.baseUrl = 'http://172.30.40.113:3005';
    }
 
    getToken(){

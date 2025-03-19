@@ -134,6 +134,7 @@ import { SemaforizacionComponent } from './Components/userBiomedica/semaforizaci
 import { IndicadoresComponent } from './Components/userBiomedica/indicadores/indicadores.component';
 import { CalendarioComponent } from './Components/userBiomedica/calendario/calendario.component';
 import { ClasificacionTipoEquipoComponent } from './Components/userBiomedica/clasificacion-tipo-equipo/clasificacion-tipo-equipo.component';
+import { ClasificacionServicioComponent } from './Components/userBiomedica/clasificacion-servicio/clasificacion-servicio.component';
 
 @NgModule({
   declarations: [
@@ -165,7 +166,8 @@ import { ClasificacionTipoEquipoComponent } from './Components/userBiomedica/cla
     SemaforizacionComponent,
     IndicadoresComponent,
     CalendarioComponent,
-    ClasificacionTipoEquipoComponent
+    ClasificacionTipoEquipoComponent,
+    ClasificacionServicioComponent
   ],
   imports: [
     AppRoutingModule,

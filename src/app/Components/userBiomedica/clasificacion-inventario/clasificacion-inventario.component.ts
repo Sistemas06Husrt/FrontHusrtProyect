@@ -14,4 +14,8 @@ export class ClasificacionInventarioComponent {
   showViewTiposEquipoBio(){
     this.router.navigate(['/biomedica/tiposequipo']);
   }
+
+  showViewServicios(){
+    this.router.navigate(['/biomedica/servicios']);
+  }
 }

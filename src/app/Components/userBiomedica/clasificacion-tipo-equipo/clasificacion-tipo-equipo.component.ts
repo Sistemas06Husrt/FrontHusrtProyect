@@ -11,15 +11,20 @@ export class ClasificacionTipoEquipoComponent implements OnInit {
 
   tiposEquipos! : any[];
   tipoEquipoServices = inject(TipoEquipoService);
+  searchText: string = '';
 
   async ngOnInit() {
     try{
-      this.tiposEquipos = await this.tipoEquipoServices.getAllTiposEquipos();
-      console.log(this.tiposEquipos);
+      this.tiposEquipos = await this.tipoEquipoServices.getAllTiposEquiposBiomedica();
     }catch{
 
     }
+  }
 
+  filteredTiposEquipos() {
+    return this.tiposEquipos.filter(tipoEquipo =>
+      tipoEquipo.nombres.toLowerCase().includes(this.searchText.toLowerCase())
+    );
   }
 
 }

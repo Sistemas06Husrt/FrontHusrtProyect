@@ -32,15 +32,15 @@ export class LoginComponent {
       if (!response.error) {
           localStorage.setItem('utoken', response.token);
           console.log(this.getDecodedAccessToken(localStorage.getItem('utoken')!));
-          if(this.getDecodedAccessToken(localStorage.getItem('utoken')!).rol === 'ADMINSISTEMASA'){
+          if(this.getDecodedAccessToken(localStorage.getItem('utoken')!).rol === 'SYSTEMADMIN'){
             this.router.navigate(['/adminsistemas']);
           }else if(this.getDecodedAccessToken(localStorage.getItem('utoken')!).rol === 'SUPERADMIN'){
             this.router.navigate(['/superadmin']);
-          }else if(this.getDecodedAccessToken(localStorage.getItem('utoken')!).rol === 'ADMINMANTENIMIENTO'){
+          }else if(this.getDecodedAccessToken(localStorage.getItem('utoken')!).rol === 'MANTENIMIENTOADMIN'){
             this.router.navigate(['/adminmantenimiento']);
-          }else if(this.getDecodedAccessToken(localStorage.getItem('utoken')!).rol === 'ADMINBIOMEDICA'){
+          }else if(this.getDecodedAccessToken(localStorage.getItem('utoken')!).rol === 'BIOMEDICAADMIN'){
             this.router.navigate(['/adminbiomedica']);
-          }else if(this.getDecodedAccessToken(localStorage.getItem('utoken')!).rol === 'USERBIOMEDICA'){
+          }else if(this.getDecodedAccessToken(localStorage.getItem('utoken')!).rol === 'BIOMEDICAUSER'){
             this.router.navigate(['/userbiomedica']);
           }
 
