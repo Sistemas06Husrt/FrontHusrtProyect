@@ -32,6 +32,12 @@ export class TipoEquipoService {
     )
   }
 
+  getTipoEquipo(idTipoEquipo: any) {
+    return firstValueFrom(
+      this.httpClient.get<any>(`${this.baseUrl}/tiposequipo/${idTipoEquipo}`, this.createHeaders())
+    )
+  }
+
   getToken() {
     return localStorage.getItem('utoken');
   }

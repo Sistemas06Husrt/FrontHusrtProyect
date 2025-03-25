@@ -6,10 +6,13 @@ import { firstValueFrom } from 'rxjs';
 import { jwtDecode } from 'jwt-decode';
 import Swal from 'sweetalert2';
 
+
 @Injectable({
   providedIn: 'root'
 })
-export class ServicioService {
+
+export class ResponsableService {
+
   private httpClient = inject(HttpClient);
   private router = inject(Router);
   private baseUrl: string;
@@ -19,19 +22,19 @@ export class ServicioService {
 
   }
 
-  getAllServicios() {
+  getAllResponsablesComodatos() {
     return firstValueFrom(
-      this.httpClient.get<any[]>(`${this.baseUrl}/servicios`, this.createHeaders())
+      this.httpClient.get<any[]>(`${this.baseUrl}/responsablescomodatos`, this.createHeaders())
     )
   }
 
-  getServicio(idServicio: any) {
+  getResponsableComodatos(idResponsable: any) {
     return firstValueFrom(
-      this.httpClient.get<any>(`${this.baseUrl}/servicios/${idServicio}`, this.createHeaders())
+      this.httpClient.get<any>(`${this.baseUrl}/responsable/${idResponsable}`, this.createHeaders())
     )
   }
 
-    getToken() {
+  getToken() {
       return localStorage.getItem('utoken');
     }
 

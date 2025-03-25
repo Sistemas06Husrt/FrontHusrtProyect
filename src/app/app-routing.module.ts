@@ -23,7 +23,10 @@ import { IndicadoresComponent } from './Components/userBiomedica/indicadores/ind
 import { CalendarioComponent } from './Components/userBiomedica/calendario/calendario.component';
 import { ClasificacionTipoEquipoComponent } from './Components/userBiomedica/clasificacion-tipo-equipo/clasificacion-tipo-equipo.component';
 import { ClasificacionServicioComponent } from './Components/userBiomedica/clasificacion-servicio/clasificacion-servicio.component';
-
+import { ClasificacionComodatosComponent } from './Components/userBiomedica/clasificacion-comodatos/clasificacion-comodatos.component';
+import { EquiposServicioComponent } from './Components/userBiomedica/vista-Equipos/equipos-servicio/equipos-servicio.component';
+import { EquiposTipoComponent } from './Components/userBiomedica/vista-Equipos/equipos-tipo/equipos-tipo.component';
+import { EquiposComodatosComponent } from './Components/userBiomedica/vista-Equipos/equipos-comodatos/equipos-comodatos.component';
 
 const routes: Routes = [
 
@@ -55,7 +58,11 @@ const routes: Routes = [
   {path: 'biomedica/indicadores', component: IndicadoresComponent, canActivate: [authGuard]},
   {path: 'biomedica/calendario', component: CalendarioComponent, canActivate: [authGuard]},
   {path: 'biomedica/tiposequipo', component: ClasificacionTipoEquipoComponent, canActivate: [authGuard]},
-  {path: 'biomedica/servicios', component: ClasificacionServicioComponent, canActivate: [authGuard]}
+  {path: 'biomedica/servicios', component: ClasificacionServicioComponent, canActivate: [authGuard]},
+  {path: 'biomedica/empComodatos', component: ClasificacionComodatosComponent, canActivate: [authGuard]},
+  {path: 'biomedica/equiposservicio', component: EquiposServicioComponent, canActivate: [authGuard]},
+  {path: 'biomedica/equipostipo', component: EquiposTipoComponent, canActivate: [authGuard]},
+  {path: 'biomedica/equiposcomodatos', component: EquiposComodatosComponent, canActivate: [authGuard]}
 ];
 
 

@@ -1,5 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { TipoEquipoService } from '../../../Services/appServices/general/tipoEquipo/tipo-equipo.service';
+import { Route, Router } from '@angular/router';
 
 
 @Component({
@@ -13,6 +14,9 @@ export class ClasificacionTipoEquipoComponent implements OnInit {
   tipoEquipoServices = inject(TipoEquipoService);
   searchText: string = '';
 
+  constructor (private router: Router){
+  }
+
   async ngOnInit() {
     try{
       this.tiposEquipos = await this.tipoEquipoServices.getAllTiposEquiposBiomedica();
@@ -25,6 +29,11 @@ export class ClasificacionTipoEquipoComponent implements OnInit {
     return this.tiposEquipos.filter(tipoEquipo =>
       tipoEquipo.nombres.toLowerCase().includes(this.searchText.toLowerCase())
     );
+  }
+
+  viewEquiposTipos(idServicio: any){
+    localStorage.setItem("idTipoEquipo", idServicio);
+    this.router.navigate(['biomedica/equipostipo']);
   }
 
 }

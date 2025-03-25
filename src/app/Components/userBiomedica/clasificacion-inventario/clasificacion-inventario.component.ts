@@ -18,4 +18,9 @@ export class ClasificacionInventarioComponent {
   showViewServicios(){
     this.router.navigate(['/biomedica/servicios']);
   }
+
+  showViewEmpComodatos(){
+    this.router.navigate(['biomedica/empComodatos']);
+  }
+
 }
