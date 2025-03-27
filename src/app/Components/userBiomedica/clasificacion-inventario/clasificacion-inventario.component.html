@@ -7,6 +7,16 @@
   <h6 style="text-align: center;">Busque equipos por servicio, tipos de equipo o comodatos.</h6>
 </div>
 
+<div class="contenedor-busqueda">
+  <h6>Busque equipos por serie:</h6>
+  <select class="form-select" id="selectOpciones" [(ngModel)]="equipoSeleccionado">
+    <option *ngFor="let equipo of equipos" [value]="equipo.serie">
+      {{ equipo.serie }}
+    </option>
+  </select>
+</div>
+
+<div style="margin-top: 3%;">
 <div class="grid-container">
   <div class="grid-item">
     <div class="card">
@@ -43,3 +53,4 @@
       </div>
     </div>
   </div>
+</div>

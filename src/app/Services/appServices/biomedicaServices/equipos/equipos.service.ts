@@ -19,6 +19,18 @@ export class EquiposService {
     this.baseUrl = 'http://172.30.40.113:3005';
   }
 
+  getAllEquipos() {
+    return firstValueFrom(
+      this.httpClient.get<any[]>(`${this.baseUrl}/equipos`, this.createHeaders())
+    )
+  }
+
+  getAllEquiposBajas() {
+    return firstValueFrom(
+      this.httpClient.get<any[]>(`${this.baseUrl}/equipos/bajas`, this.createHeaders())
+    )
+  }
+
   getAllEquiposComodatos(idResponsable: any) {
     return firstValueFrom(
       this.httpClient.get<any[]>(`${this.baseUrl}/equipos/responsable/${idResponsable}`, this.createHeaders())
