@@ -17,11 +17,8 @@ export class ClasificacionInventarioComponent implements OnInit{
   constructor (private router: Router){
   }
 
-
-
   async ngOnInit() {
       this.equipos = await this.equipoServices.getAllEquipos();
-      console.log(this.equipos);
   }
 
   showViewTiposEquipoBio(){

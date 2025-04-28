@@ -16,7 +16,7 @@ export class EquiposService {
   private baseUrl: string;
 
   constructor() {
-    this.baseUrl = 'http://172.30.40.113:3005';
+    this.baseUrl = 'http://172.30.40.241:3005';
   }
 
   getAllEquipos() {

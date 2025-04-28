@@ -15,13 +15,19 @@ export class ServicioService {
   private baseUrl: string;
 
   constructor() {
-    this.baseUrl = 'http://172.30.40.113:3005';
+    this.baseUrl = 'http://172.30.40.241:3005';
 
   }
 
   getAllServicios() {
     return firstValueFrom(
       this.httpClient.get<any[]>(`${this.baseUrl}/servicios`, this.createHeaders())
+    )
+  }
+
+  getCantidadEquipos(idServicio: any){
+    return firstValueFrom(
+      this.httpClient.get<any>(`${this.baseUrl}/cantidadequiposserv/${idServicio}`, this.createHeaders())
     )
   }
 

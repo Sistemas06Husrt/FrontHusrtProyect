@@ -27,6 +27,7 @@ import { ClasificacionComodatosComponent } from './Components/userBiomedica/clas
 import { EquiposServicioComponent } from './Components/userBiomedica/vista-Equipos/equipos-servicio/equipos-servicio.component';
 import { EquiposTipoComponent } from './Components/userBiomedica/vista-Equipos/equipos-tipo/equipos-tipo.component';
 import { EquiposComodatosComponent } from './Components/userBiomedica/vista-Equipos/equipos-comodatos/equipos-comodatos.component';
+import { EditarUsuarioComponent } from './Components/editar-usuario/editar-usuario.component';
 
 const routes: Routes = [
 
@@ -36,6 +37,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {path: 'login', component: LoginComponent},
+  {path: 'updateprofil', component: EditarUsuarioComponent, canActivate: [authGuard]},
   {path: 'superadmin', component: HomesuperadminComponent, canActivate: [authGuard]},
   {path: 'registro', component: RegistroComponent, canActivate: [authGuard]},
   {path: 'adminsistemas', component: HomeadminsistemasComponent, canActivate: [authGuard]},

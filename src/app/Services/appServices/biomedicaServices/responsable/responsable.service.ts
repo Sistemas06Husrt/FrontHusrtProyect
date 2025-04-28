@@ -18,13 +18,19 @@ export class ResponsableService {
   private baseUrl: string;
 
   constructor() {
-    this.baseUrl = 'http://172.30.40.113:3005';
+    this.baseUrl = 'http://172.30.40.241:3005';
 
   }
 
   getAllResponsablesComodatos() {
     return firstValueFrom(
       this.httpClient.get<any[]>(`${this.baseUrl}/responsablescomodatos`, this.createHeaders())
+    )
+  }
+
+  getCantidadEquipos(idResponsable: any){
+    return firstValueFrom(
+      this.httpClient.get<any>(`${this.baseUrl}/cantidadequiposprov/${idResponsable}`, this.createHeaders())
     )
   }
 

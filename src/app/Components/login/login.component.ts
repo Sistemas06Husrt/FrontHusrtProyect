@@ -21,7 +21,7 @@ export class LoginComponent {
 
   ) {
     this.formulario = new FormGroup({
-      email: new FormControl(),
+      usuarion: new FormControl(),
       contraseña: new FormControl()
     });
   }
@@ -31,7 +31,6 @@ export class LoginComponent {
       const response = await this.userServices.login(this.formulario.value);
       if (!response.error) {
           localStorage.setItem('utoken', response.token);
-          console.log(this.getDecodedAccessToken(localStorage.getItem('utoken')!));
           if(this.getDecodedAccessToken(localStorage.getItem('utoken')!).rol === 'SYSTEMADMIN'){
             this.router.navigate(['/adminsistemas']);
           }else if(this.getDecodedAccessToken(localStorage.getItem('utoken')!).rol === 'SUPERADMIN'){

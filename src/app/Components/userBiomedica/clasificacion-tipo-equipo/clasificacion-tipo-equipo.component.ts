@@ -11,6 +11,7 @@ import { Route, Router } from '@angular/router';
 export class ClasificacionTipoEquipoComponent implements OnInit {
 
   tiposEquipos! : any[];
+  cantidadesEquipos: { [id: number]: number } = {};
   tipoEquipoServices = inject(TipoEquipoService);
   searchText: string = '';
 
@@ -20,8 +21,22 @@ export class ClasificacionTipoEquipoComponent implements OnInit {
   async ngOnInit() {
     try{
       this.tiposEquipos = await this.tipoEquipoServices.getAllTiposEquiposBiomedica();
+
+      for (let tipoEquipo of this.tiposEquipos) {
+        this.obtenerCantidadEquipos(tipoEquipo.id);
+      }
     }catch{
 
+    }
+  }
+
+  async obtenerCantidadEquipos(idTipoEquipo: number) {
+    try {
+      const cantidad = await this.tipoEquipoServices.getCantidadEquipos(idTipoEquipo);
+      this.cantidadesEquipos[idTipoEquipo] = cantidad;
+    } catch (error) {
+      console.error(`Error al obtener la cantidad de equipos para el responsable ${idTipoEquipo}`, error);
+      this.cantidadesEquipos[idTipoEquipo] = 0; // En caso de error, poner 0
     }
   }
 

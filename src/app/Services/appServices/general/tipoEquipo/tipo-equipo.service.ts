@@ -16,13 +16,19 @@ export class TipoEquipoService {
   private baseUrl: string;
 
   constructor() {
-    this.baseUrl = 'http://172.30.40.113:3005';
+    this.baseUrl = 'http://172.30.40.241:3005';
 
   }
 
   getAllTiposEquipos() {
     return firstValueFrom(
       this.httpClient.get<any[]>(`${this.baseUrl}/tiposequipo`, this.createHeaders())
+    )
+  }
+
+  getCantidadEquipos(idTipoEquipo: any){
+    return firstValueFrom(
+      this.httpClient.get<any>(`${this.baseUrl}/cantidadequipostipo/${idTipoEquipo}`, this.createHeaders())
     )
   }
 

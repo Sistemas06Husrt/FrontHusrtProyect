@@ -1,7 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
-import { Observable } from 'rxjs'
 import { firstValueFrom } from 'rxjs';
 import { jwtDecode } from 'jwt-decode';
 import Swal from 'sweetalert2';
@@ -19,7 +18,7 @@ export class UserService {
   private baseUrl: string;
 
   constructor() {
-    this.baseUrl = 'http://172.30.40.113:3005';
+    this.baseUrl = 'http://172.30.40.241:3005';
    }
 
    getToken(){
@@ -34,8 +33,14 @@ export class UserService {
 
   update(formValue: any, idUser: number) {
     return firstValueFrom(
-      this.httpClient.put<any>(`${this.baseUrl}/users/update/` + idUser, formValue)
+      this.httpClient.put<any>(`${this.baseUrl}/users/update/` + idUser, formValue, this.createHeaders())
     )
+  }
+
+  getUserProfil(idUser: any){
+    return firstValueFrom(
+      this.httpClient.get<any>(`${this.baseUrl}/userprofil/` + idUser, this.createHeaders())
+    );
   }
 
   login(formValue: any) {

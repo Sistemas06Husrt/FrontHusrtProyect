@@ -7,9 +7,11 @@ import { Route, Router } from '@angular/router';
   templateUrl: './clasificacion-servicio.component.html',
   styleUrl: './clasificacion-servicio.component.css'
 })
+
 export class ClasificacionServicioComponent implements OnInit {
 
   servicios! : any[];
+  cantidadesEquipos: { [id: number]: number } = {};
   servicioServices = inject(ServicioService)
   searchText: string = '';
 
@@ -19,8 +21,22 @@ export class ClasificacionServicioComponent implements OnInit {
   async ngOnInit() {
     try{
       this.servicios = await this.servicioServices.getAllServicios();
+
+      for (let servicio of this.servicios) {
+        this.obtenerCantidadEquipos(servicio.id);
+      }
     }catch{
 
+    }
+  }
+
+  async obtenerCantidadEquipos(idServicio: number) {
+    try {
+      const cantidad = await this.servicioServices.getCantidadEquipos(idServicio);
+      this.cantidadesEquipos[idServicio] = cantidad;
+    } catch (error) {
+      console.error(`Error al obtener la cantidad de equipos para el responsable ${idServicio}`, error);
+      this.cantidadesEquipos[idServicio] = 0; // En caso de error, poner 0
     }
   }
 
