@@ -1,9 +1,15 @@
 import { Injectable } from '@angular/core';
 
+import {API_URL} from '../../../../constantes'
+
 @Injectable({
   providedIn: 'root'
 })
 export class MantenimientosService {
 
-  constructor() { }
+  private baseUrl: string;
+
+  constructor() {
+    this.baseUrl = API_URL;
+  }
 }

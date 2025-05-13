@@ -140,6 +140,8 @@ import { EquiposServicioComponent } from './Components/userBiomedica/vista-Equip
 import { EquiposTipoComponent } from './Components/userBiomedica/vista-Equipos/equipos-tipo/equipos-tipo.component';
 import { EquiposComodatosComponent } from './Components/userBiomedica/vista-Equipos/equipos-comodatos/equipos-comodatos.component';
 import { EditarUsuarioComponent } from './Components/editar-usuario/editar-usuario.component';
+import { ReportesEquipoComponent } from './Components/userBiomedica/vista-Equipos/reportes-equipo/reportes-equipo.component';
+import { NuevoReporteComponent } from './Components/userBiomedica/vista-Equipos/reportes-equipo/nuevo-reporte/nuevo-reporte.component';
 
 @NgModule({
   declarations: [
@@ -177,7 +179,9 @@ import { EditarUsuarioComponent } from './Components/editar-usuario/editar-usuar
     EquiposServicioComponent,
     EquiposTipoComponent,
     EquiposComodatosComponent,
-    EditarUsuarioComponent
+    EditarUsuarioComponent,
+    ReportesEquipoComponent,
+    NuevoReporteComponent
   ],
   imports: [
     AppRoutingModule,

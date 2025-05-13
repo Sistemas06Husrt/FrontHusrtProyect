@@ -6,6 +6,8 @@ import { firstValueFrom } from 'rxjs';
 import { jwtDecode } from 'jwt-decode';
 import Swal from 'sweetalert2';
 
+import {API_URL} from '../../../../constantes';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -15,7 +17,7 @@ export class ServicioService {
   private baseUrl: string;
 
   constructor() {
-    this.baseUrl = 'http://172.30.40.241:3005';
+    this.baseUrl = API_URL;
 
   }
 
