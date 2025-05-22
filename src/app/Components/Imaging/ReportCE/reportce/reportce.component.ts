@@ -16,9 +16,10 @@ const EXCEL_TYPE =
 const EXCEL_EXTENSION = '.xlsx';
 
 @Component({
-  selector: 'app-reportce',
-  templateUrl: './reportce.component.html',
-  styleUrl: './reportce.component.css',
+    selector: 'app-reportce',
+    templateUrl: './reportce.component.html',
+    styleUrl: './reportce.component.css',
+    standalone: false
 })
 export class ReportceComponent implements OnInit {
   formDate: FormGroup;

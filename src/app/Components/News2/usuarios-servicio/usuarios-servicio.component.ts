@@ -3,10 +3,11 @@ import { Component, inject, OnInit } from '@angular/core';
 import { MessageService } from 'primeng/api';
 
 @Component({
-  selector: 'app-usuarios-servicio',
-  templateUrl: './usuarios-servicio.component.html',
-  styleUrl: './usuarios-servicio.component.css',
-  providers: [MessageService]
+    selector: 'app-usuarios-servicio',
+    templateUrl: './usuarios-servicio.component.html',
+    styleUrl: './usuarios-servicio.component.css',
+    providers: [MessageService],
+    standalone: false
 })
 export class UsuariosServicioComponent implements OnInit {
 

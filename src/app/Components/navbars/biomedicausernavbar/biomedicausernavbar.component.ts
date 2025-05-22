@@ -3,9 +3,10 @@ import { Router } from '@angular/router';
 import { jwtDecode } from 'jwt-decode';
 
 @Component({
-  selector: 'app-biomedicausernavbar',
-  templateUrl: './biomedicausernavbar.component.html',
-  styleUrl: './biomedicausernavbar.component.css'
+    selector: 'app-biomedicausernavbar',
+    templateUrl: './biomedicausernavbar.component.html',
+    styleUrl: './biomedicausernavbar.component.css',
+    standalone: false
 })
 export class BiomedicausernavbarComponent {
 

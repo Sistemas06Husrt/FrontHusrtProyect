@@ -5,10 +5,11 @@ import { MenuItem, MessageService } from 'primeng/api';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-equipos-tipo',
-  templateUrl: './equipos-tipo.component.html',
-  styleUrl: './equipos-tipo.component.css',
-  providers: [MessageService]
+    selector: 'app-equipos-tipo',
+    templateUrl: './equipos-tipo.component.html',
+    styleUrl: './equipos-tipo.component.css',
+    providers: [MessageService],
+    standalone: false
 })
 export class EquiposTipoComponent implements OnInit {
 

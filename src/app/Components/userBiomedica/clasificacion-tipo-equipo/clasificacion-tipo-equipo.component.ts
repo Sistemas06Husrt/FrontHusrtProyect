@@ -4,9 +4,10 @@ import { Route, Router } from '@angular/router';
 
 
 @Component({
-  selector: 'app-clasificacion-tipo-equipo',
-  templateUrl: './clasificacion-tipo-equipo.component.html',
-  styleUrl: './clasificacion-tipo-equipo.component.css'
+    selector: 'app-clasificacion-tipo-equipo',
+    templateUrl: './clasificacion-tipo-equipo.component.html',
+    styleUrl: './clasificacion-tipo-equipo.component.css',
+    standalone: false
 })
 export class ClasificacionTipoEquipoComponent implements OnInit {
 

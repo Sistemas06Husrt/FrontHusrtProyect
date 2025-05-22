@@ -3,9 +3,10 @@ import { Route, Router } from '@angular/router';
 import { EquiposService } from '../../../Services/appServices/biomedicaServices/equipos/equipos.service';
 
 @Component({
-  selector: 'app-clasificacion-inventario',
-  templateUrl: './clasificacion-inventario.component.html',
-  styleUrl: './clasificacion-inventario.component.css'
+    selector: 'app-clasificacion-inventario',
+    templateUrl: './clasificacion-inventario.component.html',
+    styleUrl: './clasificacion-inventario.component.css',
+    standalone: false
 })
 export class ClasificacionInventarioComponent implements OnInit{
 

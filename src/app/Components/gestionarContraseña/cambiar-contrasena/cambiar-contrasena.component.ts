@@ -8,9 +8,10 @@ import { UserService } from '../../../Services/appServices/userServices/user.ser
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-cambiar-contrasena',
-  templateUrl: './cambiar-contrasena.component.html',
-  styleUrl: './cambiar-contrasena.component.css'
+    selector: 'app-cambiar-contrasena',
+    templateUrl: './cambiar-contrasena.component.html',
+    styleUrl: './cambiar-contrasena.component.css',
+    standalone: false
 })
 export class CambiarContrasenaComponent implements OnInit {
   form: FormGroup;

@@ -6,10 +6,11 @@ import Swal from 'sweetalert2';
 import { MessageService } from 'primeng/api';
 
 @Component({
-  selector: 'app-aerolinea',
-  templateUrl: './aerolinea.component.html',
-  styleUrl: './aerolinea.component.css',
-  providers: [MessageService]
+    selector: 'app-aerolinea',
+    templateUrl: './aerolinea.component.html',
+    styleUrl: './aerolinea.component.css',
+    providers: [MessageService],
+    standalone: false
 })
 export class AerolineaComponent {
 

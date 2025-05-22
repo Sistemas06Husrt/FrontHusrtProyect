@@ -7,9 +7,10 @@ import Swal from 'sweetalert2';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-olvido-contrasena',
-  templateUrl: './olvido-contrasena.component.html',
-  styleUrl: './olvido-contrasena.component.css'
+    selector: 'app-olvido-contrasena',
+    templateUrl: './olvido-contrasena.component.html',
+    styleUrl: './olvido-contrasena.component.css',
+    standalone: false
 })
 export class OlvidoContrasenaComponent {
 

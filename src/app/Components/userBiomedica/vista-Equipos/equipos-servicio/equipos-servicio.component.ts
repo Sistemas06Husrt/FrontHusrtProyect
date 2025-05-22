@@ -3,9 +3,10 @@ import { EquiposService } from '../../../../Services/appServices/biomedicaServic
 import { ServicioService } from '../../../../Services/appServices/general/servicio/servicio.service';
 
 @Component({
-  selector: 'app-equipos-servicio',
-  templateUrl: './equipos-servicio.component.html',
-  styleUrl: './equipos-servicio.component.css'
+    selector: 'app-equipos-servicio',
+    templateUrl: './equipos-servicio.component.html',
+    styleUrl: './equipos-servicio.component.css',
+    standalone: false
 })
 export class EquiposServicioComponent implements OnInit{
 

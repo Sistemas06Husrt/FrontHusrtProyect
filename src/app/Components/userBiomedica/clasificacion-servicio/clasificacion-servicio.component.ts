@@ -3,9 +3,10 @@ import { ServicioService } from '../../../Services/appServices/general/servicio/
 import { Route, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-clasificacion-servicio',
-  templateUrl: './clasificacion-servicio.component.html',
-  styleUrl: './clasificacion-servicio.component.css'
+    selector: 'app-clasificacion-servicio',
+    templateUrl: './clasificacion-servicio.component.html',
+    styleUrl: './clasificacion-servicio.component.css',
+    standalone: false
 })
 
 export class ClasificacionServicioComponent implements OnInit {

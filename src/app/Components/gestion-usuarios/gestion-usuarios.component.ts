@@ -7,10 +7,11 @@ import Swal from 'sweetalert2';
 import { jwtDecode } from 'jwt-decode';
 
 @Component({
-  selector: 'app-gestion-usuarios',
-  templateUrl: './gestion-usuarios.component.html',
-  styleUrl: './gestion-usuarios.component.css',
-  providers: [MessageService]
+    selector: 'app-gestion-usuarios',
+    templateUrl: './gestion-usuarios.component.html',
+    styleUrl: './gestion-usuarios.component.css',
+    providers: [MessageService],
+    standalone: false
 })
 
 export class GestionUsuariosComponent {

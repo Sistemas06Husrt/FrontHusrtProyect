@@ -3,9 +3,10 @@ import { EquiposService } from '../../../../Services/appServices/biomedicaServic
 import { ResponsableService } from '../../../../Services/appServices/biomedicaServices/responsable/responsable.service';
 
 @Component({
-  selector: 'app-equipos-comodatos',
-  templateUrl: './equipos-comodatos.component.html',
-  styleUrl: './equipos-comodatos.component.css'
+    selector: 'app-equipos-comodatos',
+    templateUrl: './equipos-comodatos.component.html',
+    styleUrl: './equipos-comodatos.component.css',
+    standalone: false
 })
 export class EquiposComodatosComponent implements OnInit {
 

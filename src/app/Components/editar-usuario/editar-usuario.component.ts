@@ -6,9 +6,10 @@ import Swal from 'sweetalert2';
 
 
 @Component({
-  selector: 'app-editar-usuario',
-  templateUrl: './editar-usuario.component.html',
-  styleUrl: './editar-usuario.component.css'
+    selector: 'app-editar-usuario',
+    templateUrl: './editar-usuario.component.html',
+    styleUrl: './editar-usuario.component.css',
+    standalone: false
 })
 
 export class EditarUsuarioComponent implements OnInit {

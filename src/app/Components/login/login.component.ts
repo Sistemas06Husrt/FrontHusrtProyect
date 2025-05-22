@@ -7,9 +7,10 @@ import { Router } from '@angular/router';
 import { UserService } from '../../Services/appServices/userServices/user.service';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+    selector: 'app-login',
+    templateUrl: './login.component.html',
+    styleUrl: './login.component.css',
+    standalone: false
 })
 export class LoginComponent {
   formulario: FormGroup;

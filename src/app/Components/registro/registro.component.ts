@@ -5,9 +5,10 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-registro',
-  templateUrl: './registro.component.html',
-  styleUrl: './registro.component.css'
+    selector: 'app-registro',
+    templateUrl: './registro.component.html',
+    styleUrl: './registro.component.css',
+    standalone: false
 })
 export class RegistroComponent implements OnInit {
 

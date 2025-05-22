@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { EntidadService } from '../../../../Services/Servinte/entidad.service';
 
 @Component({
-  selector: 'app-reportspediatrics',
-  templateUrl: './reportspediatrics.component.html',
-  styleUrl: './reportspediatrics.component.css'
+    selector: 'app-reportspediatrics',
+    templateUrl: './reportspediatrics.component.html',
+    styleUrl: './reportspediatrics.component.css',
+    standalone: false
 })
 export class ReportspediatricsComponent implements OnInit{
 

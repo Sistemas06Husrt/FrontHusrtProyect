@@ -2,9 +2,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Sidebar } from 'primeng/sidebar';
 import { Router } from '@angular/router';
 @Component({
-  selector: 'app-superadminnavbar',
-  templateUrl: './superadminnavbar.component.html',
-  styleUrl: './superadminnavbar.component.css'
+    selector: 'app-superadminnavbar',
+    templateUrl: './superadminnavbar.component.html',
+    styleUrl: './superadminnavbar.component.css',
+    standalone: false
 })
 export class SuperadminnavbarComponent {
 

@@ -3,9 +3,10 @@ import { ResponsableService } from '../../../Services/appServices/biomedicaServi
 import { Route, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-clasificacion-comodatos',
-  templateUrl: './clasificacion-comodatos.component.html',
-  styleUrl: './clasificacion-comodatos.component.css'
+    selector: 'app-clasificacion-comodatos',
+    templateUrl: './clasificacion-comodatos.component.html',
+    styleUrl: './clasificacion-comodatos.component.css',
+    standalone: false
 })
 
 export class ClasificacionComodatosComponent {
