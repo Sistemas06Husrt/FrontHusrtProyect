@@ -9,6 +9,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReportceComponent } from './Components/Imaging/ReportCE/reportce/reportce.component';
 
+
+
+    import { AutoFocusModule } from 'primeng/autofocus';
+    import { AnimateOnScrollModule } from 'primeng/animateonscroll';
+    import { DeferModule } from 'primeng/defer';
+    import { FocusTrapModule } from 'primeng/focustrap';
+    import { FloatLabelModule } from 'primeng/floatlabel';
+
+
 import { AccordionModule } from 'primeng/accordion';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { AvatarModule } from 'primeng/avatar';
@@ -28,7 +37,6 @@ import { ConfirmPopupModule } from 'primeng/confirmpopup';
 import { ColorPickerModule } from 'primeng/colorpicker';
 import { ContextMenuModule } from 'primeng/contextmenu';
 import { DataViewModule } from 'primeng/dataview';
-import { VirtualScrollerModule } from 'primeng/virtualscroller';
 import { DialogModule } from 'primeng/dialog';
 import { DividerModule } from 'primeng/divider';
 import { DockModule } from 'primeng/dock';
@@ -44,7 +52,6 @@ import { InputMaskModule } from 'primeng/inputmask';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputNumberModule } from 'primeng/inputnumber';
-import { InputTextareaModule } from 'primeng/inputtextarea';
 import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
 import { InputGroupModule } from 'primeng/inputgroup'
 import { InputOtpModule } from 'primeng/inputotp'
@@ -75,10 +82,8 @@ import { ScrollTopModule } from 'primeng/scrolltop';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { SidebarModule } from 'primeng/sidebar';
 import { SkeletonModule } from 'primeng/skeleton';
-import { SlideMenuModule } from 'primeng/slidemenu';
 import { SliderModule } from 'primeng/slider';
 import { SpeedDialModule } from 'primeng/speeddial';
-import { SpinnerModule } from 'primeng/spinner';
 import { SplitButtonModule } from 'primeng/splitbutton';
 import { SplitterModule } from 'primeng/splitter';
 import { StepperModule } from 'primeng/stepper';
@@ -94,11 +99,9 @@ import { ToastModule } from 'primeng/toast';
 import { ToggleButtonModule } from 'primeng/togglebutton';
 import { ToolbarModule } from 'primeng/toolbar';
 import { TooltipModule } from 'primeng/tooltip';
-import { TriStateCheckboxModule } from 'primeng/tristatecheckbox';
 import { TreeModule } from 'primeng/tree';
 import { TreeSelectModule } from 'primeng/treeselect';
 import { TreeTableModule } from 'primeng/treetable';
-import { AnimateModule } from 'primeng/animate';
 import { CardModule } from 'primeng/card';
 import { BlockUIModule } from 'primeng/blockui';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
@@ -142,6 +145,9 @@ import { EquiposComodatosComponent } from './Components/userBiomedica/vista-Equi
 import { EditarUsuarioComponent } from './Components/editar-usuario/editar-usuario.component';
 import { ReportesEquipoComponent } from './Components/userBiomedica/vista-Equipos/reportes-equipo/reportes-equipo.component';
 import { NuevoReporteComponent } from './Components/userBiomedica/vista-Equipos/reportes-equipo/nuevo-reporte/nuevo-reporte.component';
+import { OlvidoContrasenaComponent } from './Components/gestionarContraseña/olvido-contrasena/olvido-contrasena.component';
+import { CambiarContrasenaComponent } from './Components/gestionarContraseña/cambiar-contrasena/cambiar-contrasena.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -181,7 +187,9 @@ import { NuevoReporteComponent } from './Components/userBiomedica/vista-Equipos/
     EquiposComodatosComponent,
     EditarUsuarioComponent,
     ReportesEquipoComponent,
-    NuevoReporteComponent
+    NuevoReporteComponent,
+    OlvidoContrasenaComponent,
+    CambiarContrasenaComponent
   ],
   imports: [
     AppRoutingModule,
@@ -205,11 +213,11 @@ import { NuevoReporteComponent } from './Components/userBiomedica/vista-Equipos/
     CheckboxModule,
     ChipsModule,
     ChipModule,
+    SpeedDialModule,
     ColorPickerModule,
     ConfirmDialogModule,
     ConfirmPopupModule,
     ContextMenuModule,
-    VirtualScrollerModule,
     DataViewModule,
     DialogModule,
     DividerModule,
@@ -225,7 +233,6 @@ import { NuevoReporteComponent } from './Components/userBiomedica/vista-Equipos/
     InputMaskModule,
     InputSwitchModule,
     InputTextModule,
-    InputTextareaModule,
     InputNumberModule,
     InputGroupModule,
     InputGroupAddonModule,
@@ -258,10 +265,8 @@ import { NuevoReporteComponent } from './Components/userBiomedica/vista-Equipos/
     ScrollPanelModule,
     ScrollTopModule,
     SkeletonModule,
-    SlideMenuModule,
     SliderModule,
     SpeedDialModule,
-    SpinnerModule,
     SplitterModule,
     StepperModule,
     SplitButtonModule,
@@ -277,22 +282,26 @@ import { NuevoReporteComponent } from './Components/userBiomedica/vista-Equipos/
     ToggleButtonModule,
     ToolbarModule,
     TooltipModule,
-    TriStateCheckboxModule,
     TreeModule,
     TreeSelectModule,
     TreeTableModule,
-    AnimateModule,
     CardModule,
     RippleModule,
     StyleClassModule,
     IconFieldModule,
-    InputIconModule
+    InputIconModule,
+    AutoFocusModule,
+    AnimateOnScrollModule,
+    DeferModule,
+    FocusTrapModule,
+    FloatLabelModule,
 
 
 
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })

@@ -33,6 +33,19 @@ export class UserService {
     )
   }
 
+  recuperarContrasena(email: String){
+    return firstValueFrom(
+      this.httpClient.post<any>(`${this.baseUrl}/olvidocontrasena`, {email})
+    )
+  }
+
+  cambiarContrasena(formValue: any) {
+    return firstValueFrom(
+      this.httpClient.put<any>(`${this.baseUrl}/cambiarcontrasena`, formValue, this.createHeaders())
+    )
+  }
+
+
   update(formValue: any, idUser: number) {
     return firstValueFrom(
       this.httpClient.put<any>(`${this.baseUrl}/users/update/` + idUser, formValue, this.createHeaders())

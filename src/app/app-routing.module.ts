@@ -1,3 +1,4 @@
+import { OlvidoContrasenaComponent } from './Components/gestionarContraseña/olvido-contrasena/olvido-contrasena.component';
 import { NgModule } from '@angular/core';
 import { authGuard } from './auth.guard';
 import { RouterModule, Routes } from '@angular/router';
@@ -28,6 +29,7 @@ import { EquiposServicioComponent } from './Components/userBiomedica/vista-Equip
 import { EquiposTipoComponent } from './Components/userBiomedica/vista-Equipos/equipos-tipo/equipos-tipo.component';
 import { EquiposComodatosComponent } from './Components/userBiomedica/vista-Equipos/equipos-comodatos/equipos-comodatos.component';
 import { EditarUsuarioComponent } from './Components/editar-usuario/editar-usuario.component';
+import { CambiarContrasenaComponent } from './Components/gestionarContraseña/cambiar-contrasena/cambiar-contrasena.component';
 
 const routes: Routes = [
 
@@ -52,6 +54,9 @@ const routes: Routes = [
   {path: 'servinte/news2', component: UsuariosServicioComponent},
   {path: 'acreditacion/aerolinea', component: AerolineaComponent},
   {path: 'admusuarios', component: GestionUsuariosComponent, canActivate: [authGuard]},
+
+  {path: 'olvidocontraseña', component: OlvidoContrasenaComponent},
+  {path: 'recuperarcontraseña', component: CambiarContrasenaComponent},
 
   // UsuarioBiomedica
   {path: 'biomedica/inventario', component: ClasificacionInventarioComponent, canActivate: [authGuard]},
